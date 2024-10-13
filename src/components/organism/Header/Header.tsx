@@ -8,6 +8,8 @@ const Header = () => {
     <div className='flex justify-between items-center'>
         <div className='flex gap-8'>
             <Logo />
+            
+
             {/* <NavBar /> */}
         </div>
         <div>
