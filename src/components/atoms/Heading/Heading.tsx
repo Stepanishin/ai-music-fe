@@ -1,10 +1,10 @@
 import React from 'react'
 
-interface HeaderProps {
+interface HeadingProps {
     title: string
 }
 
-const Header: React.FC<HeaderProps> = ({ title }) => {
+const Heading: React.FC<HeadingProps> = ({ title }) => {
   return (
     <h2 className='text-balance text-2xl font-semibold'>
         {title}
@@ -12,4 +12,4 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
   )
 }
 
-export default Header
+export default Heading
