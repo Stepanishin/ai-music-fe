@@ -3,11 +3,15 @@ import Button from '../../atoms/Button/Button'
 import happyImg from '../../../assets/img/happy-min.jpg'
 import parentsImg from '../../../assets/img/parents-min.jpg'
 import wendingImg from '../../../assets/img/wending-min.jpg'
+import Laurel from '../../atoms/Laurel/Laurel'
 
 const HeroSection = () => {
   return (
     <div className='flex justify-center items-center gap-14 w-full'>
         <div className='flex flex-col gap-10 w-full items-center'>
+            <div className='self-start relative top-[20px] left-[20px]'>
+                <Laurel />
+            </div>
             <p className='text-[56px] font-semibold leading-[70px] text-center text-pretty'>
                 You can order a song for any occasion from us
             </p>
