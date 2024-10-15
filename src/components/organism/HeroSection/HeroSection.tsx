@@ -13,13 +13,13 @@ const HeroSection = () => {
                 <Laurel />
             </div>
             <p className='text-[56px] font-semibold leading-[70px] text-center text-pretty'>
-                You can order a song for any occasion from us
+                Need a song for a special occasion?
             </p>
             <p className='text-[24px] font-semibold leading-[40px] text-center text-pretty'>
-                We will create a unique song for you in 10 minutes, which is not inferior to studio recordings!
+                We’ve got you covered! In just 10 minutes, we’ll create a one-of-a-kind song that sounds as good as a studio track.
             </p>
             <div className='w-96'>
-                <Button label='Order a song' />
+                <Button label='Get a song' />
             </div>
         </div>
 

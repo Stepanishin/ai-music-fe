@@ -5,7 +5,7 @@ import Button from '../../atoms/Button/Button'
 
 const Header = () => {
   return (
-    <div className='flex justify-between items-center'>
+    <header className='flex justify-between items-center'>
         <div className='flex gap-8'>
             <Logo />
             
@@ -15,7 +15,7 @@ const Header = () => {
         <div>
           <Button label='Order a song' />
         </div>
-    </div>
+    </header>
   )
 }
 

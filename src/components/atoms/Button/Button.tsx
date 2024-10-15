@@ -2,16 +2,14 @@ import React from 'react'
 import './Button.css'
 
 interface ButtonProps {
-    label: string
+    label: string,
+    type?: 'button' | 'submit' | 'reset'
 }
 
-const Button = ({label}: ButtonProps) => {
+const Button = ({label, type = 'button' }: ButtonProps) => {
   return (
-    // <button className="px-10 py-2 bg-button-background text-button-text font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
-    //     {label}
-    // </button>
     <>
-      <button className="btn">{label}</button>
+      <button type={type} className="btn">{label}</button>
       <button className="btn2"></button>
     </>
   )
