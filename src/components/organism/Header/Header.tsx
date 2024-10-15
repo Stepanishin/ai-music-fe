@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../../atoms/Logo/Logo'
 import NavBar from '../../molecules/NavBar/NavBar'
 import Button from '../../atoms/Button/Button'
+import ModalWindow from '../ModalWindow/ModalWindow'
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalToggle = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
-    <header className='flex justify-between items-center'>
+    <header className='flex justify-between items-center relative z-1'>
         <div className='flex gap-8'>
             <Logo />
             
@@ -13,8 +20,10 @@ const Header = () => {
             {/* <NavBar /> */}
         </div>
         <div>
-          <Button label='Order a song' />
+          <Button label='Order a song' onClick={handleModalToggle} />
         </div>
+
+        {isModalOpen && <ModalWindow onClose={handleModalToggle} />}
     </header>
   )
 }
