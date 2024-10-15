@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import Heading from '../../atoms/Heading/Heading';
 import Button from '../../atoms/Button/Button';
 
-const FormComponent = () => {
+interface FormComponentProps {
+  buttonLabel?: string;
+}
+
+const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentProps) => {
   const [email, setEmail] = useState('');
   const [genre, setGenre] = useState('pop');
   const [comment, setComment] = useState('');
@@ -86,7 +90,7 @@ const FormComponent = () => {
 
             {/* Submit Button */}
             <div className="mt-6 grid">
-              <Button label="Create your AI song +" type="submit" />
+              <Button label={buttonLabel} type="submit" />
             </div>
           </form>
         </div>
