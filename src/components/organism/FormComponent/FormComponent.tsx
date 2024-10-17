@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Heading from '../../atoms/Heading/Heading';
 import Button from '../../atoms/Button/Button';
+import axios from 'axios';
 
 interface FormComponentProps {
   buttonLabel?: string;
@@ -21,6 +22,25 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
     };
 
     console.log('Form Data Submitted:', formData);
+    
+    const initiatePayment = async () => {
+      const orderData = {
+        story: comment,
+        genre: genre
+      }
+
+      try {
+        const response = await axios.post(
+          'http://localhost:5000/api/create-checkout-session',
+          orderData
+        );
+        window.location.href = response.data.url;
+      } catch (error) {
+        console.error('Payment Error:', error);
+      }
+    };
+
+    initiatePayment();
   };
 
   return (

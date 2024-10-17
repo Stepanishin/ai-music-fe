@@ -1,29 +1,38 @@
 import React from 'react'
 import Example from '../../molecules/Example/Example'
 import Heading from '../../atoms/Heading/Heading'
+// @ts-ignore
+import WeddingSong from '../../../assets/songs/wedding-song.mp3'
+// @ts-ignore
+import BirthdaySong from '../../../assets/songs/Birthday-song.mp3'
+// @ts-ignore
+import ParentSong from '../../../assets/songs/parents-song.mp3'
+// @ts-ignore
+import LoveSong from '../../../assets/songs/love-song.mp3'
 
 const examplesList = [
     {
-        description: "A man contacted me with the goal of writing a song for his wife for her birthday. The client provided warm words from the heart that he wanted to voice in the song.",
-        title: "Birthday Song",
-        song: "https://www.youtube.com/watch?v=3Q3z1b1Z7ZQ"
+        description: "So, this guy got in touch wanting a song for his wedding. He shared some really sweet stuff he wanted to say in it.",
+        title: "Wedding Song",
+        song: WeddingSong
     },
     {
-        description: "A man contacted me with the goal of writing a song for his wife for her birthday. The client provided warm words from the heart that he wanted to voice in the song.",
+        description: "A dude asked us to write a birthday song for his wife. He gave us some heartfelt words he wanted to get across.",
         title: "Birthday Song",
-        song: "https://www.youtube.com/watch?v=3Q3z1b1Z7ZQ"
+        song: BirthdaySong
     },
     {
-        description: "A man contacted me with the goal of writing a song for his wife for her birthday. The client provided warm words from the heart that he wanted to voice in the song.",
-        title: "Birthday Song",
-        song: "https://www.youtube.com/watch?v=3Q3z1b1Z7ZQ"
+        description: "Someone hit our app up to write a song for their parents. They passed along some loving words they wanted in the song.",
+        title: "Song for Parents",
+        song: ParentSong
     },
     {
-        description: "A man contacted me with the goal of writing a song for his wife for her birthday. The client provided warm words from the heart that he wanted to voice in the song.",
-        title: "Birthday Song",
-        song: "https://www.youtube.com/watch?v=3Q3z1b1Z7ZQ"
+        description: "Got a request to make a song for someone's significant other. They sent over some heartfelt stuff they wanted to include.",
+        title: "Love Song",
+        song: LoveSong
     }
 ]
+
 
 const Examples = () => {
   return (
