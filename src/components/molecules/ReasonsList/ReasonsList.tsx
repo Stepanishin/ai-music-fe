@@ -36,7 +36,7 @@ const data = [
 
 const ReasonsList = () => {
   return (
-    <div className='flex gap-10 justify-center'>
+    <div className='flex gap-4 justify-center items-baseline flex-wrap xl:flex-nowrap'>
         {
             data.map((reason, index) => (
                 <ReasonItem key={index} title={reason.title} description={reason.description} image={reason.image} />

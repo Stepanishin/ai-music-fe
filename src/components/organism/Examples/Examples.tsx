@@ -30,7 +30,7 @@ const Examples = () => {
     <div className='flex flex-col gap-28'>
         <Heading title="Examples of songs we have created" />
 
-        <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-center'>
+        <div className='flex gap-4 justify-center items-baseline flex-wrap xl:flex-nowrap'>
             {
                 examplesList.map((example, index) => (
                     <Example example={example} key={index} />

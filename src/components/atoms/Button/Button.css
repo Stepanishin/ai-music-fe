@@ -1,6 +1,6 @@
 .btn, .btn2 {
     text-align: center;
-    line-height: 50px;
+    /* line-height: 50px; */
     color: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
     background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
@@ -11,7 +11,7 @@
 }
 
 .btn2 {
-    position: relative;
+    position: absolute;
     margin-top: -50px;
     z-index: -1;
     filter: blur(30px);

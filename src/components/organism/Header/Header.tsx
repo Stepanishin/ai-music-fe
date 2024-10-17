@@ -19,7 +19,7 @@ const Header = () => {
 
             {/* <NavBar /> */}
         </div>
-        <div>
+        <div className='relative'>
           <Button label='Order a song' onClick={handleModalToggle} />
         </div>
 
