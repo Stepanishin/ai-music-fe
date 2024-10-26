@@ -26,7 +26,8 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
     const initiatePayment = async () => {
       const orderData = {
         story: comment,
-        genre: genre
+        genre: genre,
+        email: email,
       }
 
       try {
