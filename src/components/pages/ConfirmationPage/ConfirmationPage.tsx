@@ -4,10 +4,11 @@ import { useLocation, Navigate, useNavigate } from 'react-router-dom';
 function ConfirmationPage() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const email = queryParams.get('email') ?? 'test1';
+  const email = queryParams.get('email') ?? undefined;
+  const orderId = queryParams.get('orderId') ?? undefined;
   const navigate = useNavigate();
 
-  if (!email) {
+  if (!email || !orderId) {
     return <Navigate to="/" />;
   }
 
