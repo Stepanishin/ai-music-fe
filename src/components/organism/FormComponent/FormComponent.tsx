@@ -32,7 +32,7 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
 
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/create-checkout-session',
+          'http://24.199.97.194:5000/api/create-checkout-session',
           orderData
         );
         window.location.href = response.data.url;
