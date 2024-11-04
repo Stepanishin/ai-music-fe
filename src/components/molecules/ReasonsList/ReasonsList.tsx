@@ -1,4 +1,3 @@
-import React from 'react'
 import ReasonItem from '../../atoms/ReasonItem/ReasonItem'
 import WendingImage from '../../../assets/img/wending-min.jpg'
 import PolovinkaImage from '../../../assets/img/polovinka-min.jpg'

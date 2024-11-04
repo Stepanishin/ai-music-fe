@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Logo from '../../atoms/Logo/Logo'
-import NavBar from '../../molecules/NavBar/NavBar'
 import Button from '../../atoms/Button/Button'
 import ModalWindow from '../ModalWindow/ModalWindow'
 

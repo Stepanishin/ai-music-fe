@@ -1,4 +1,3 @@
-import React from 'react'
 import ReasonsList from '../../molecules/ReasonsList/ReasonsList'
 import Heading from '../../atoms/Heading/Heading'
 

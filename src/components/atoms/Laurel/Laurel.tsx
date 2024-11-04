@@ -1,4 +1,3 @@
-import React from 'react'
 import LaurelIcon from '../../../assets/icon/laurel.svg'
 
 const Laurel = () => {

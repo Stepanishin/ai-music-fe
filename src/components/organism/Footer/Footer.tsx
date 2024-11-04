@@ -1,6 +1,5 @@
-import React from 'react';
 import Logo from '../../atoms/Logo/Logo';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import social icons
+import { FaTwitter } from 'react-icons/fa'; // Import social icons
 
 const Footer = () => {
   return (

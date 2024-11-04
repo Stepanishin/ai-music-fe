@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface ReasonItemProps {
     title: string
     description: string,

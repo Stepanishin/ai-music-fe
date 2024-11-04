@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Button from '../../atoms/Button/Button';
 import happyImg from '../../../assets/img/happy-min.jpg';
 import parentsImg from '../../../assets/img/parents-min.jpg';

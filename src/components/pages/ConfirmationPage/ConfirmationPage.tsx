@@ -1,5 +1,4 @@
-// frontend/src/components/ConfirmationPage.js
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { useLocation, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './ConfirmationPage.css';
@@ -13,7 +12,7 @@ function ConfirmationPage() {
   const [status, setStatus] = useState('Pending');
   const [songUrl, setSongUrl] = useState('');
   const [videoUrl, setVideoUrl] = useState('');
-  const [timeElapsed, setTimeElapsed] = useState(0);
+  const [, setTimeElapsed] = useState(0);
   const pollingInterval = 20000; // Интервал опроса в миллисекундах
   const maxPollingTime = 10 * 60 * 1000; // Максимальное время опроса (10 минут)
 
@@ -69,6 +68,7 @@ function ConfirmationPage() {
       clearInterval(intervalId);
       clearTimeout(timeoutId);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [email, orderId]);
 
   if (!email || !orderId) {

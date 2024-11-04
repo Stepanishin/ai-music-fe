@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSection from '../../organism/HeroSection/HeroSection'
 import AboutSection from '../../organism/AboutSection/AboutSection'
 import Examples from '../../organism/Examples/Examples'
