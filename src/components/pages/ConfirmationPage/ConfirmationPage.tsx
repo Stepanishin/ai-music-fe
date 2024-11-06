@@ -25,7 +25,8 @@ function ConfirmationPage() {
     const fetchOrderStatus = async () => {
       try {
         const response = await axios.get(
-          `http://24.199.97.194:5000/api/order-status`,
+          // `http://24.199.97.194:5000/api/order-status`,
+          'https://api.my-aimusic.com/api/order-status',
           {
             params: { email, orderId },
           }
@@ -77,7 +78,7 @@ function ConfirmationPage() {
 
   if (status === 'Completed') {
     return (
-      <div className="h-[calc(100vh-120px)] flex flex-col items-center justify-center w-full mt-[-100px] text-center px-4">
+      <div className="lg:h-[calc(100vh-120px)] flex flex-col items-center justify-center w-full mt-[50px] lg:mt-[-100px] text-center px-4">
         <h2 className="text-2xl font-semibold mb-4">Thank you for your order!</h2>
         <h2 className="text-2xl font-semibold mb-4">Your song is ready!</h2>
         <p className="text-lg mb-4">
@@ -113,7 +114,7 @@ function ConfirmationPage() {
 
   if (status === 'Timeout') {
     return (
-      <div className="h-[calc(100vh-120px)] flex flex-col items-center justify-center w-full mt-[-100px] text-center px-4">
+      <div className="lg:h-[calc(100vh-120px)] flex flex-col items-center justify-center w-full mt-[50px] lg:mt-[-100px] text-center px-4">
         <h2 className="text-2xl font-semibold mb-4">Processing Time Exceeded</h2>
         <p className="text-lg">
           Sorry, your song is taking longer than expected.
@@ -133,7 +134,7 @@ function ConfirmationPage() {
 
   // Статус "Pending" или начальный экран
   return (
-    <div className="h-[calc(100vh-120px)] flex flex-col items-center justify-center w-full mt-[-100px] text-center px-4">
+    <div className="lg:h-[calc(100vh-120px)] flex flex-col items-center justify-center w-full mt-[50px] lg:mt-[-100px] text-center px-4">
       <h2 className="text-2xl font-semibold mb-4">Thank you for your order!</h2>
       <p className="text-lg">
         We’ve received your order, and it’s now in the works.
