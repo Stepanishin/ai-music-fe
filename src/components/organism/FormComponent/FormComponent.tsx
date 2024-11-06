@@ -55,7 +55,7 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
           <form onSubmit={handleSubmit}>
             {/* Email Address */}
             <div className="mb-4 sm:mb-8 flex flex-col items-start">
-              <label htmlFor="email-address" className="block mb-2 text-sm font-medium dark:text-white">
+              <label htmlFor="email-address" className="block mb-2 text-sm font-medium">
                 Your Email <span className='text-red-500'>*</span>
               </label>
               <input
@@ -64,21 +64,21 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                className="border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                 placeholder="Enter your email"
               />
             </div>
 
             {/* Genre Selection */}
             <div className="mb-4 sm:mb-8 flex flex-col items-start">
-              <label htmlFor="song-genre" className="block mb-2 text-sm font-medium dark:text-white">
+              <label htmlFor="song-genre" className="block mb-2 text-sm font-medium">
                 Pick a genre
               </label>
               <select
                 id="song-genre"
                 value={genre}
                 onChange={(e) => setGenre(e.target.value)}
-                className="custom-select border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                className="custom-select border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500"
               >
                 <option value="pop">Pop</option>
                 <option value="rock">Rock</option>
@@ -92,7 +92,7 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
 
             {/* Comment */}
             <div>
-              <label htmlFor="comment" className="block mb-2 text-sm font-medium dark:text-white text-start">
+              <label htmlFor="comment" className="block mb-2 text-sm font-medium text-start">
                 Any special requests for the song? <span className='text-red-500'>*</span>
               </label>
               <div className="mt-1">
@@ -103,7 +103,7 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
                   onChange={(e) => setComment(e.target.value)}
                   required
                   rows={3}
-                  className="h-[200px] border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                  className="h-[200px] border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                   placeholder="Tell us what you have in mind..."
                 ></textarea>
               </div>

@@ -8,7 +8,7 @@ const Footer = () => {
         <Logo />
       </div>
       
-      <div className="text-sm text-gray-500 dark:text-neutral-400">
+      <div className="text-sm text-gray-500">
         <p>support: <a href="mailto:aimusic@gmail.com" className="text-blue-500 hover:underline">aimusic@gmail.com</a></p>
       </div>
 
