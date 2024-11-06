@@ -29,10 +29,11 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
         genre: genre,
         email: email,
       }
-
+      
       try {
         const response = await axios.post(
-          'http://24.199.97.194:5000/api/create-checkout-session',
+          // 'http://24.199.97.194:5000/api/create-checkout-session',
+          'https://api.my-aimusic.com/api/create-checkout-session',
           orderData
         );
         window.location.href = response.data.url;
