@@ -14,15 +14,15 @@ const HeroSection = () => {
   };
 
   return (
-    <div className='flex flex-col lg:flex-row justify-center items-center gap-28 lg:gap-14 w-full relative mt-20 md:mt-0'>
+    <div className='flex flex-col lg:flex-row justify-center items-center gap-28 lg:gap-14 w-full relative mt-20 lg:mt-0'>
       <div className='flex flex-col gap-10 w-full items-center'>
-        <div className='lg:self-start relative top-[20px] left-[20px]'>
+        <div className='lg:self-start relative top-[20px] lg:left-[20px]'>
           <Laurel />
         </div>
-        <p className='text-[56px] font-semibold leading-[70px] text-center text-pretty'>
+        <p className='text-[40px] lg:text-[56px] font-semibold leading-[50px] lg:leading-[70px] text-center text-pretty'>
           Need a song for a special occasion?
         </p>
-        <p className='text-[24px] font-semibold leading-[40px] text-center text-pretty'>
+        <p className='text-[20px] lg:text-[24px] font-semibold leading-[32px] lg:leading-[40px] text-center text-pretty'>
           We’ve got you covered! In just 10 minutes, we’ll create a one-of-a-kind song that sounds as good as a studio track.
         </p>
         <div className='w-96'>
@@ -30,7 +30,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className='relative flex items-center w-full h-[480px] justify-center'>
+      <div className='relative hidden lg:flex items-center w-full h-[480px] justify-center'>
         <div className='relative w-24 sm:w-64 lg:w-96 h-[480px] sm:scale-125'>
           <img
             src={wendingImg}

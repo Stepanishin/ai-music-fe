@@ -5,8 +5,8 @@ import FormComponent from '../../organism/FormComponent/FormComponent'
 
 const MainPage = () => {
   return (
-    <div className='flex flex-col gap-60 gap- items-center justify-center w-full'>
-      <section className='h-[calc(100vh-120px)] flex flex-col items-center justify-center w-full 2xl:mt-[-100px]'>
+    <div className='flex flex-col gap-32 lg:gap-60 gap- items-center justify-center w-full'>
+      <section className='lg:h-[calc(100vh-120px)] flex flex-col items-center justify-center w-full relative'>
         <HeroSection />
       </section>
       <section>
