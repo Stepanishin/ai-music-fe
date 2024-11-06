@@ -51,7 +51,7 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
           <Heading title="Let’s create your song!" />
         </div>
 
-        <div className="mt-5 p-4 relative z-10 bg-white border rounded-xl sm:mt-10 md:p-10 dark:bg-neutral-900 dark:border-neutral-700">
+        <div className="mt-5 p-4 relative z-10 bg-white border rounded-xl sm:mt-10 md:p-10">
           <form onSubmit={handleSubmit}>
             {/* Email Address */}
             <div className="mb-4 sm:mb-8 flex flex-col items-start">
