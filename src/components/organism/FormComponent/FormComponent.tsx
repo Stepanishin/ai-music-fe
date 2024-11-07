@@ -7,7 +7,7 @@ interface FormComponentProps {
   buttonLabel?: string;
 }
 
-const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentProps) => {
+const FormComponent = ({buttonLabel = "Create your AI song for $3.99"}: FormComponentProps) => {
   const [email, setEmail] = useState('');
   const [genre, setGenre] = useState('pop');
   const [comment, setComment] = useState('');
@@ -22,6 +22,8 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
     };
 
     console.log('Form Data Submitted:', formData);
+
+    const isLocalEnv = process.env.REACT_APP_IS_LOCAL_ENV === 'true';
     
     const initiatePayment = async () => {
       const orderData = {
@@ -32,8 +34,7 @@ const FormComponent = ({buttonLabel = "Create your AI song +"}: FormComponentPro
       
       try {
         const response = await axios.post(
-          // 'http://24.199.97.194:5000/api/create-checkout-session',
-          'https://api.my-aimusic.com/api/create-checkout-session',
+          `${isLocalEnv ? 'http://localhost:5000/api/create-checkout-session' : 'https://api.my-aimusic.com/api/order-status'}`,
           orderData
         );
         window.location.href = response.data.url;

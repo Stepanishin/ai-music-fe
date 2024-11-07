@@ -15,7 +15,7 @@ const ModalWindow = ({ onClose }: any) => {
         </button>
 
         <div className='w-full'>
-            <FormComponent buttonLabel={"Order a song"} />
+            <FormComponent buttonLabel={"Order a song for $3.99"} />
         </div>
 
       </div>

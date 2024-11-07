@@ -29,3 +29,9 @@
         background-position: 0% 50%;
     }
 }
+
+@media (max-width: 768px) {
+    .btn, .btn2 {
+        padding: 0 20px;
+    }
+}

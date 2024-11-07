@@ -3,13 +3,13 @@ import { FaTwitter } from 'react-icons/fa'; // Import social icons
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between items-center py-10 mt-[100px]">
+    <footer className="flex flex-col gap-4 md:flex-row justify-between items-center py-10 mt-[100px]">
       <div className="flex gap-8 items-center">
         <Logo />
       </div>
       
       <div className="text-sm text-gray-500">
-        <p>support: <a href="mailto:aimusic@gmail.com" className="text-blue-500 hover:underline">aimusic@gmail.com</a></p>
+        <p>support: <a href="mailto:myaimusic.help@gmail.com" className="text-blue-500 hover:underline">myaimusic.help@gmail.com</a></p>
       </div>
 
       <div className="flex gap-6">
