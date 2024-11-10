@@ -17,8 +17,6 @@ function ConfirmationPage() {
   const maxPollingTime = 10 * 60 * 1000; // Максимальное время опроса (10 минут)
 
   const isLocalEnv = process.env.REACT_APP_IS_LOCAL_ENV === 'true';
-  console.log('Is Local Env:', isLocalEnv);
-
   useEffect(() => {
     if (!email || !orderId) return;
 
@@ -28,7 +26,7 @@ function ConfirmationPage() {
     const fetchOrderStatus = async () => {
       try {
         const response = await axios.get(
-          `${isLocalEnv ? 'http://localhost:5000/api/create-checkout-session' : 'https://api.my-aimusic.com/api/order-status'}`,
+          `${isLocalEnv ? 'http://localhost:5000/api/order-status' : 'https://api.my-aimusic.com/api/order-status'}`,
           {
             params: { email, orderId },
           }

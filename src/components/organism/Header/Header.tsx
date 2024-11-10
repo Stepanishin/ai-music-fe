@@ -14,8 +14,6 @@ const Header = () => {
 
   const install = usePWAInstall();
 
-  console.log('install', install);
-
   return (
     <header className='flex justify-between items-center relative z-1'>
         <div className='flex gap-8'>

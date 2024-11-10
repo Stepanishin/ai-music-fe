@@ -34,7 +34,7 @@ const FormComponent = ({buttonLabel = "Create your AI song for $3.99"}: FormComp
       
       try {
         const response = await axios.post(
-          `${isLocalEnv ? 'http://localhost:5000/api/create-checkout-session' : 'https://api.my-aimusic.com/api/order-status'}`,
+          `${isLocalEnv ? 'http://localhost:5000/api/create-checkout-session' : 'https://api.my-aimusic.com/api/create-checkout-session'}`,
           orderData
         );
         window.location.href = response.data.url;
