@@ -7,7 +7,7 @@ interface FormComponentProps {
   buttonLabel?: string;
 }
 
-const FormComponent = ({buttonLabel = "Create your AI song for $3.99"}: FormComponentProps) => {
+const FormComponent = ({buttonLabel = "Create your AI song for $0.99"}: FormComponentProps) => {
   const [email, setEmail] = useState('');
   const [genre, setGenre] = useState('pop');
   const [comment, setComment] = useState('');
