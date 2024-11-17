@@ -47,7 +47,7 @@ const FormComponent = ({buttonLabel = "Create your AI song for $0.99"}: FormComp
   };
 
   return (
-    <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto !w-full">
+    <div id='order' className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto !w-full">
       <div className="mx-auto max-w-2xl">
         <div className="text-center">
           <Heading title="Let’s create your song!" />

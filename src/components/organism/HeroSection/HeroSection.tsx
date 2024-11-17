@@ -14,7 +14,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className='flex flex-col lg:flex-row justify-center items-center gap-28 lg:gap-14 w-full relative mt-20 lg:mt-0'>
+    <div id='hero' className='flex flex-col lg:flex-row justify-center items-center gap-28 lg:gap-14 w-full relative mt-20 lg:mt-0'>
       <div className='flex flex-col gap-10 w-full items-center'>
         <div className='lg:self-start relative top-[20px] lg:left-[20px]'>
           <Laurel />

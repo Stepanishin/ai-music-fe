@@ -36,7 +36,7 @@ const examplesList = [
 
 const Examples = () => {
   return (
-    <div className='flex flex-col gap-28'>
+    <div id='examples' className='flex flex-col gap-28'>
         <Heading title="Examples of songs we have created" />
 
         <div className='flex gap-4 justify-center items-baseline flex-wrap xl:flex-nowrap'>
